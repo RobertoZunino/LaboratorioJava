@@ -49,9 +49,9 @@ public class Parte03_CondizionaleIf {
 		// La sua sintassi è:
 		//
 		// if (<<espressione booleana "guardia">>) {
-		//    <<comando da eseguire se la guardia è vera>>
+		//    <<comandi da eseguire se la guardia è vera>>
 		// } else {
-		//    <<comando da eseguire se la guardia è falsa>>
+		//    <<comandi da eseguire se la guardia è falsa>>
 		// }
 		
 		x = 10;

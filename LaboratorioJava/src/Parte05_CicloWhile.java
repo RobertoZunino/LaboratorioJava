@@ -14,7 +14,7 @@ public class Parte05_CicloWhile {
 		//
 		// La sua sintassi è
 		//     while (guardia) {
-		//         corpo
+		//         <<comandi da eseguire finché la guardia è vera>>
 		//     }
 		//
 		int i = 0;
@@ -28,12 +28,12 @@ public class Parte05_CicloWhile {
 		// Il ciclo sopra stampa i numeri da 0 (incluso) a 10 (incluso).
 	}
 		
-	static void esercizio1() {
+	static void esercizioGuardiaFalsa() {
 		// Verificate che, se la guardia è falsa fin dall'inizio
 		// il while non esegue nemmeno un'iterazione.
 	}
 
-	static void esercizio2() {
+	static void esercizioAltreGuardie() {
 		// Nel ciclo di sotto, cosa succede se come guardia usiamo (i < 10) ?
 		//
 		// E se usiamo (i != 10) ?
@@ -47,12 +47,12 @@ public class Parte05_CicloWhile {
 		System.out.println("Fine ciclo while!");
 	}
 
-	static void esercizio3() {
+	static void esercizioQuadrati() {
 		// Modificate il ciclo while di sopra per stampare i primi 10
 		// quadrati invece che i primi 10 natirali.
 	}
 	
-	static void esercizio4() {
+	static void esercizioNonTerminazione() {
 		// Osservate che il while sottostante non termina mai.
 		// La guardia è sempre vera, quindi non si esce mai dal ciclo.
 		//
@@ -87,7 +87,7 @@ public class Parte05_CicloWhile {
 		// 2^31 è quindi troppo grande per un int.		
 	}
 	
-	static void esercizio5() {
+	static void esercizioPolinomio() {
 		// Dati a, b con a<b, stampare tutti i valori del polinomio
 		// 	   10 x^2 - 5 x + 7
 		// per a<=x<=b.
@@ -100,7 +100,7 @@ public class Parte05_CicloWhile {
 		// int y;
 	}		
 
-	static void esercizio6() {
+	static void esercizioPolinomioSoglia() {
 		// Nell'esercizio precedente aggiungete un if in modo da
 		// stampare solo i valori del polinomio sopra una data soglia.
 		
