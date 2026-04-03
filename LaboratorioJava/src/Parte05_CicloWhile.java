@@ -27,7 +27,7 @@ public class Parte05_CicloWhile {
 		
 		// Il ciclo sopra stampa i numeri da 0 (incluso) a 10 (incluso).
 	}
-	
+		
 	static void esercizio1() {
 		// Verificate che, se la guardia è falsa fin dall'inizio
 		// il while non esegue nemmeno un'iterazione.
@@ -48,6 +48,11 @@ public class Parte05_CicloWhile {
 	}
 
 	static void esercizio3() {
+		// Modificate il ciclo while di sopra per stampare i primi 10
+		// quadrati invece che i primi 10 natirali.
+	}
+	
+	static void esercizio4() {
 		// Osservate che il while sottostante non termina mai.
 		// La guardia è sempre vera, quindi non si esce mai dal ciclo.
 		//
@@ -82,7 +87,7 @@ public class Parte05_CicloWhile {
 		// 2^31 è quindi troppo grande per un int.		
 	}
 	
-	static void esercizio4() {
+	static void esercizio5() {
 		// Dati a, b con a<b, stampare tutti i valori del polinomio
 		// 	   10 x^2 - 5 x + 7
 		// per a<=x<=b.
@@ -94,4 +99,11 @@ public class Parte05_CicloWhile {
 		// int x;
 		// int y;
 	}		
+
+	static void esercizio6() {
+		// Nell'esercizio precedente aggiungete un if in modo da
+		// stampare solo i valori del polinomio sopra una data soglia.
+		
+		// int soglia = 5;
+	}
 }
