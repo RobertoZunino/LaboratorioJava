@@ -32,4 +32,48 @@ public class Parte04_Procedure {
 	// Per ora omettiamo alcuni aspetti avanzati delle procedure e funzioni
 	// come il passaggio dei parametri e il valore di ritorno.
 	// Ci torneremo in futuro.
+	
+	// Si noti come le variabili siano visibili solo all'interno della
+	// funzione dove vengno dichiarate:
+	static void dichiaraVariabileX() {
+		int x = 123;
+		System.out.println("x = " + x);
+	}
+	
+	static void dichiaraVariabileY() {
+		int y = 123;
+		System.out.println("y = " + y);
+		// System.out.println("x = " + x); // Errore! x non visibile qui!
+	}
+	
+	// Più precisamente, la visibilità (o lo "scope") di una variabile
+	// parte dalla sua dichiarazione e termina alla fine del blocco
+	// dove è stata dichiarata, cioè alla "chiusa graffa".
+	static void visibilità() {
+		int a = 123;
+		
+		// Qui solo a è visibile ("in scope").
+		
+		if (a > 100) {
+			int b = a * 12;
+			// Qui a e b sono visibili.
+			System.out.println("a = " + a);
+			System.out.println("b = " + b);			
+		}
+
+		// Qui solo a è visibile.		
+		System.out.println("a = " + a);
+		
+		// È pure possibile aprire graffe senza if, solo per delimitare
+		// la visibilità di una variabile:
+		{
+			int c = a + 10000;
+			// Qui a e c sono visibili.
+			System.out.println("a = " + a);
+			System.out.println("c = " + c);			
+		}
+
+		// Qui solo a è visibile.		
+		System.out.println("a = " + a);
+	}
 }
