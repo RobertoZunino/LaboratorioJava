@@ -76,4 +76,22 @@ public class Parte04_Procedure {
 		// Qui solo a è visibile.		
 		System.out.println("a = " + a);
 	}
+	
+	static void scambioVariabili() {
+		// Per scambiare i valori di due variabili, non possiamo scrivere
+		// 		x = y ; y = x ;
+		// perché dopo "x = y" il valore di x è andato perduto.
+		
+		// Possiamo però usare una variabile "di appoggio":
+		int a = 5;
+		int b = 10;
+		int tmp; // "appoggio"
+		
+		tmp = a;
+		a = b;
+		b = tmp;
+
+		System.out.println("a = " + a); // 10
+		System.out.println("b = " + b); // 5
+	}
 }
