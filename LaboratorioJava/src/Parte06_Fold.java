@@ -112,7 +112,7 @@ public class Parte06_Fold {
 		System.out.println("minimo di p(" + a + "), ..., p(" + b + ") = " + minimo);
 	}
 
-	static void esercizio1() {
+	static void esercizioMassimo() {
 		// Dati due interi a, b con a<b, calcolate il *massimo* assunto dal
 		// polinomio
 		// 	   - 10 x^2 + 5 x - 7
@@ -125,12 +125,12 @@ public class Parte06_Fold {
 		System.out.println("minimo di p(" + a + "), ..., p(" + b + ") = " + massimo);			
 	}
 	
-	static void esercizio2() {
+	static void esercizioMassimoArgomento() {
 		// Modificate gli esercizi di sopra su minimo / massimo in modo da
 		// stampare anche il valore di x che causa il minimo / massimo.
 	}
 	
-	static void esercizio3() {
+	static void esercizioSommaRipetuta() {
 		// Dato n>=0 e m qualunque, calcolate con un ciclo m*n senza
 		// usare la moltiplicazione, ma sommando m per n volte.
 		int n = 4;
@@ -138,5 +138,35 @@ public class Parte06_Fold {
 		
 		System.out.println("Il prodotto " + m + "*" + n + " è uguale a ...");
 	}
+
+	static void esercizioNumeroDivisori() {
+		// Dato n>=2 calcolate il numero di divisori interi non banali
+		// (1 < divisore < n).
+		int n = 123456;
+		
+		int divisori = 42; // Bozza da correggere
+		
+		System.out.println("Il numero " + n + " ha " + divisori + " divisori.");
+	}
 	
+	static void esercizioPrimalità() {
+		// Dato n>=0 stabilire se è un numero primo.
+		// Potete adattare la soluzione all'esercizio precedente.
+		// Non vi serve una variabile contatore ma basta un booleano. 
+		
+		int n = 123456;
+		
+		boolean primo = true; // Bozza da correggere
+		
+		if (primo) {
+			System.out.println("Il numero " + n + " è primo.");
+		} else {
+			System.out.println("Il numero " + n + " non è primo.");			
+		}
+		
+		// Bonus 1: nel caso non primo, stampate anche il più piccolo dei
+		// divisori non banali di n.
+		// Bonus 2: nel caso non primo, stampate anche il più grande dei
+		// divisori non banali di n.
+	}
 }
