@@ -61,6 +61,19 @@ public class Parte06_Fold {
 		System.out.println("La somma dei primi 20 quadrati è " + somma);
 	}
 	
+	static void esercizioSommaFinoN() {
+		// Dato n>=0, sommate 1+2+...+n.
+		// Confrontate il risultato con la formula n*(n+1)/2 .
+		
+		int n = 100;
+		
+		int somma = 42; // Bozza, da correggere
+	
+		// TODO
+		
+		System.out.println("La somma 1+2+...+" + n + " è " + somma);
+	}
+	
 	static void prodotto() {
 		// Moltiplichiamo x^2 per x tra 1 e 6:
 		//		1^2 * 2^2 * ... * 6^2
@@ -80,7 +93,19 @@ public class Parte06_Fold {
 		}
 		
 		System.out.println("Il prodotto dei primi 10 quadrati è " + prodotto);
-	}	
+	}
+	
+	static void esercizioFattoriale() {
+		// Dato n>=0, calcolate il fattoriale n! = 1*2*...*n.
+		
+		int n = 7;
+		
+		int fattoriale = 42; // Bozza, da correggere
+		
+		// TODO
+
+		System.out.println("Il fattoriale " + n + "! è uguale a " + fattoriale);
+	}
 	
 	static void minimo() {
 		// Dati due interi a, b con a<b, calcoliamo il minimo assunto dal
@@ -121,7 +146,9 @@ public class Parte06_Fold {
 		int b = 10;
 		
 		int massimo = +10000;  // Bozza da correggere!
-		
+
+		// TODO
+
 		System.out.println("minimo di p(" + a + "), ..., p(" + b + ") = " + massimo);			
 	}
 	
@@ -135,17 +162,25 @@ public class Parte06_Fold {
 		// usare la moltiplicazione, ma sommando m per n volte.
 		int n = 4;
 		int m = -3;
-		
+
+		// TODO
+
 		System.out.println("Il prodotto " + m + "*" + n + " è uguale a ...");
 	}
 
 	static void esercizioNumeroDivisori() {
 		// Dato n>=2 calcolate il numero di divisori interi non banali
 		// (1 < divisore < n).
+		// Per capire se a è divisibile per b basta controllare il resto
+		// della divisione:
+		//		a % b == 0
+		
 		int n = 123456;
 		
 		int divisori = 42; // Bozza da correggere
 		
+		// TODO
+
 		System.out.println("Il numero " + n + " ha " + divisori + " divisori.");
 	}
 	
@@ -157,7 +192,9 @@ public class Parte06_Fold {
 		int n = 123456;
 		
 		boolean primo = true; // Bozza da correggere
-		
+
+		// TODO
+
 		if (primo) {
 			System.out.println("Il numero " + n + " è primo.");
 		} else {
@@ -169,4 +206,40 @@ public class Parte06_Fold {
 		// Bonus 2: nel caso non primo, stampate anche il più grande dei
 		// divisori non banali di n.
 	}
+	
+	static void esercizioPari() {
+		// Stampate i numeri pari da 0 a 20.
+		//
+		// Potete fare scorrere i da 0 a 20 e usare un if per scartare
+		// i dispari. Per controllare se un numero è pari potete usare
+		//		n%2 == 0
+		//
+		// Alternativamente, potete incrementare di due i ad ogni iterazione.
+	}
+	
+	static void esercizioQuadrato() {
+		// Dato n>=0, verificate se n è un quadrato.
+		// Per farlo, provate a confrontarlo con m*m per ogni m<=n.
+		int n = 144;
+
+		// Usate una variabile booleana per memorizzare se n è un quadrato
+		// oppure no.
+		boolean quadrato = false; // Bozza, da correggere
+		
+		// Nel caso n sia un quadrato, memorizzate la radice in questa
+		// variabile.
+		int radice = 0;
+
+		// TODO
+
+		if (quadrato) {
+			System.out.println("Il numero " + n + " è il quadrato di " + radice + ".");
+		} else {
+			System.out.println("Il numero " + n + " non è un quadrato.");			
+		}
+		
+		// Bonus: quando nel ciclo si trova la radice, non serve proseguire
+		// col ciclo while. Modificate la guardia del ciclo in modo che si
+		// fermi subito quando questo accade.
+	}	
 }
