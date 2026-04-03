@@ -54,6 +54,17 @@ public class Parte02_VariabiliIntere {
 		// Esercizio 1.
 		// Verificate che ora x vale davvero 110, stampandola.
 		
+		// Si possono dichiarare più variabili.
+		int y;
+		int z;
+		y = 10;
+		z = 20;
+		System.out.println("y = " + y + ", z = " + z);
+		
+		// Nella dichiarazione è anche possibile definire un valore iniziale della variabile.
+		int a = 10;
+		int b = 20;
+		System.out.println("a = " + a + ", b = " + b);
 		
 		// Esercizio 2.
 		// Provate anche gli altri operatori aritmetici: + - * /
