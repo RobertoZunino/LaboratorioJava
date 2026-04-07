@@ -77,6 +77,37 @@ public class Parte10_Stringhe {
 		}
 	}
 
+	static void esercizioRicerca() {
+		// Data una stringa, determinate se contiene almeno una lettera 'A'
+		// al suo interno.
+		
+		String s = "ecco qui A un esempio";
+		
+		boolean trovataA = false; // Bozza da correggere
+		
+		// TODO
+		
+		if (trovataA) {
+			System.out.println("La stringa " + s + " contiene A!");
+		} else {
+			System.out.println("La stringa " + s + " NON contiene A!");
+		}
+		
+	}
+
+	static void esercizioDuplica() {
+		// Data una stringa, calcolate una nuova stringa ottenuta
+		// raddoppiando tutte le lettere. Per esempio, se la stringa di
+		// partenza è "Mario" la stringa finale deve essere "MMaarriioo".
+		
+		String s = "Mario";
+		String risultato = ""; // Bozza da correggere
+		
+		// TODO
+		
+		System.out.println("La stringa " + s + " raddoppiata è " + risultato);
+	}
+	
 	static void esercizioPalindroma() {
 		// Data una stringa, determinare se è palindroma, ovvero se 
 		// è uguale a se stessa letta al contrario (da destra a sinistra).
