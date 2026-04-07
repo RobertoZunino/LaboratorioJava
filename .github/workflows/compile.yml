@@ -1,0 +1,29 @@
+name: Java Compilation CI
+
+on: [push, pull_request]
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
+    
+    - name: Compile all Java files
+      run: javac LaboratorioJava/src/*.java
+    
+    - name: Verify compilation
+      run: |
+        if [ $? -eq 0 ]; then
+          echo "✅ All Java files compiled successfully"
+        else
+          echo "❌ Compilation failed"
+          exit 1
+        fi
+
