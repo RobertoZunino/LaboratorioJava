@@ -2,6 +2,10 @@
 public class Parte09_Vettori {
 
 	public static void main(String[] args) {
+		introduzione();
+	}
+	
+	static void introduzione() {
 		// Fino ad ora abbiamo visto variabili in grado di contenere un
 		// singolo dato, per esempio un numero.
 		//
@@ -183,5 +187,86 @@ public class Parte09_Vettori {
 		} else {
 			System.out.println("v NON è ordinato in modo crescente");			
 		}
+	}
+	
+	static void esercizioOrdinamentoPerSelezione() {
+		// (impegnativo)
+		//
+		// Dato un vettore di interi, lo si permuti in modo da renderlo
+		// ordinato in modo debolmente crescente.
+		//
+		// Per farlo, si proceda in questo modo:
+		// - Si trovi la posizione i del minimo elemento del vettore. Si
+		//   scambi l'elemento in posizione i con quello in posizione 0.
+		// - Si trovi la posizione i del minimo elemento tra quelli in
+		//   posizione 1..length-1. Si scambi l'elemento in posizione i
+		//   con quello in posizione 1.
+		// - Si trovi la posizione i del minimo elemento tra quelli in
+		//   posizione 2..length-1. Si scambi l'elemento in posizione i
+		//   con quello in posizione 2.
+		// - Si proceda analogamente col resto del vettore, fino a renderlo
+		//   ordinato.
+		//
+		// Questo algoritmo è noto come oridinamente per selezione
+		// (selection sort) ed effettua O(n^2) operazioni, dove n è la
+		// lunghezza del vettore. Non è l'algoritmo più veloce, ma è uno tra
+		// i più semplici.
+		
+		int[] v = new int[] { 10,4,72,34,2,99,64 };
+		
+		// TODO
+		
+		System.out.println("La lunghezza di v è " + v.length);
+		int i;
+		for (i = 0 ; i < v.length ; i++) {
+			System.out.println("v[" + i + "] = " + v[i]);
+		}
+	}
+
+	static void iVettoriSonoRiferimenti() {
+		// Questa è una nota avanzata su come Java gestisce i valori di tipo
+		// vettore.
+
+		// Quando usiamo i tipi fondamentali, come int o double, una
+		// variabile contiene il valore che rappresenta. Se copiamo
+		// il valore di una variabile in un'altra, la nuova variabile
+		// ottiene una copia del valore.
+		int i = 5;
+		int j = i;  // Copia del valore di i
+		j = 7;
+		System.out.println("i = " + i + ", j = " + j);
+		// Ora j è diventato 7, ma i è rimasto 5, perché era stata fatta una
+		// copia del suo valore.
+		
+		// Quando usiamo i vettori, invece, accade una cosa diversa.
+		int[] v = new int[] { 1,2,3,4 };
+		// L'espressione new alloca (riserva) un po' della memoria del
+		// nostro computer, scrive lì dentro i dati (1,2,3,4). La variabile
+		// v non contiene direttamente i dati, ma solo un *riferimento* alla
+		// memoria così allocata.
+		//
+		// Se proviamo a copiare v, non copiamo i dati del vettori, ma solo
+		// il suo riferimento.
+		int[] w = v; // Non copia (1,2,3,4), ma solo il suo riferimento.
+		w[1] = 1000; // Modifica sia w[1] che v[1] perché si riferisce allo
+					 // stesso vettore!
+		System.out.println("w[1] = " + w[1] + ", v[1] = " + v[1]);
+		
+		// Se vogliamo copiare i dati del vettore, creando quindi un secondo
+		// vettore in memoria, possiamo usare una new e fare una copia
+		// manuale:
+		w = new int[v.length];
+		for (i = 0 ; i < v.length ; i++) {
+			w[i] = v[i];
+		}
+		w[1] = 2000;
+		// Ora w[1] è 2000 ma v[1] è rimasto 1000.
+		System.out.println("w[1] = " + w[1] + ", v[1] = " + v[1]);
+		
+		// Un altro modo per fare una copia è usare clone().
+		w = v.clone(); // Crea una copia del vettore, non del riferimento!
+		w[1] = 3000;
+		// Ora w[1] è 3000 ma v[1] è rimasto 1000.
+		System.out.println("w[1] = " + w[1] + ", v[1] = " + v[1]);
 	}
 }
