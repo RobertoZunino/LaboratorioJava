@@ -2,7 +2,7 @@
 public class Parte01_Introduzione {
 
 	public static void main(String[] args) {
-		// Java è linguaggio di programmazione imperativo.
+		// Java è un linguaggio di programmazione imperativo.
 		//
 		// Un programma Java è formato da *comandi* che, quando eseguiti,
 		// causano determinati *effetti* come ad esempio:
