@@ -7,8 +7,8 @@ public class Parte13_Input {
 
 	public static void main(String[] args) {
 		introduzione();
-		// esempioLetturaDaTastiera();
-		esempioLetturaDaFile();
+		esempioLetturaDaTastiera();
+		// esempioLetturaDaFile();
 	}
 	
 	// Una variabile globale per rappresentare l'input da tastiera.
