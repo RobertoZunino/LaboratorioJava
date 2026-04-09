@@ -2,6 +2,10 @@
 public class Parte07_CicloFor {
 
 	public static void main(String[] args) {
+		introduzione();
+	}
+	
+	static void introduzione() {
 		// Il ciclo for è una variante del while.
 		// Ha la seguente sintassi:
 		//
