@@ -269,4 +269,94 @@ public class Parte09_Vettori {
 		// Ora w[1] è 3000 ma v[1] è rimasto 1000.
 		System.out.println("w[1] = " + w[1] + ", v[1] = " + v[1]);
 	}
+	
+	static void riferimentiNulli() {
+		// Questa è una nota avanzata su come Java gestisce i riferimenti.
+		// 
+		// Di solito, quando usiamo una variabile di tipo vettore, la
+		// impostiamo a un riferimento ottenuto con una espressione new.
+		// È anche possibile impostarla a un valore speciale "null" che
+		// indica un riferimento invalido, a un vettore che non esiste
+		// veramente.
+		int[] v = null;
+		
+		// Siccome v non ha davvero un vettore associato, usare v.length o
+		// v[indice] causa un errore (NullPointerException) a tempo di
+		// esecuzione.
+		//
+		// v[0] = 42;  // Errore!
+		
+		// Possiamo solo controllare se v è nullo no.
+		if (v == null) {
+			System.out.println("v è proprio null!");
+		}
+		
+		// Possiamo anche impostare v a un riferimento valido.
+		v = new int[4];
+		v[0] = 42; // Ok!
+		
+		// Se ora impostiamo v di nuovo a null, ritorna inusabile.
+		v = null;
+		// Qui v.length e v[indice] non si possono usare.
+		
+		// E così via.
+		v = new int[2];
+		v[1] = 51; // Ok!
+	}
+	
+	static void cenniAllaGarbageCollection() {
+		// Quando usiamo una new per creare un vettore, riserviamo una parte
+		// della memoria del nostro computer (allocazione). Questa memoria
+		// viene segnata come "in uso" e non è più disponibile per contenere
+		// altri dati.
+		int[] v = new int[1000000]; // Un milione di interi
+		
+		// In programmi complessi, è importante anche liberare (deallocare)
+		// la memoria quando non ci serve più, rendendola disponibile per 
+		// le allocazioni future del nostro o di altri programmi.
+		//
+		// In alcuni linguaggi (come C e C++) la deallocazione va eseguita
+		// manualmente con un comando apposito (free(v) / delete[] v).
+		// Storicamente, questo ha causato vari problemi perché consente
+		// di accedere per sbaglio alla memoria anche dopo la deallocazione:
+		//   v = new int[10];
+		//   v[0] = 6;
+		//   delete[] v;
+		//   ...
+		//   v[1] = 7; // Scrivo su una zona di memoria che ora potrebbe
+		//             //  essere usata per altri scopi! Pericolosissimo!
+		//
+		// Questo problema viene chiamato "memory unsafety".
+		//
+		// In Java la memory unsafety viene evitata con un meccanismo
+		// chiamato "garbage collection" (raccolta rifiuti), che
+		// approssimativamente funziona così:
+		//   - la free/delete manuale è vietata dal linguaggio;
+		//   - ogni tanto, Java ferma il programma e ne scandisce tutte le
+		//     variabili attive, identificando i riferimenti ancora in uso;
+		//   - se con tali riferimenti non è possibile raggiungere una zona
+		//     di memoria precedentemente allocata, questa viene deallocata.
+		//
+		// La deallocazione non avviene più in punti precisi del programma,
+		// ma avviene a discrezione del linguaggio: Java decide quando farlo
+		// al posto nostro, col vincolo di non deallocare mai memoria che
+		// il programma potrebbe raggiungere in futuro.
+		
+		// Sopra abbiamo allocato v, ora Java NON può deallocarlo.
+		v[1] = 10;
+		// Ora Java NON può deallocare v.
+		int i = 7;
+		// Ora Java NON può deallocare v.
+		v = null;
+		// Non ci sono più modi per raggiungere il vettore.
+		// Ora Java POTREBBE deallocare v, ma non è obbligato.
+		i = i + 100;
+		// Ora Java POTREBBE deallocare v, ma non è obbligato.
+		
+		// In sintesi, se un vettore grande non è più in uso, è buona norma
+		// cancellarne i riferimenti, per esempio impostando a null le
+		// variabili vettore o uscendo dalle graffe dove sono state
+		// dichiarate, in modo da consentire a Java di deallocare la
+		// memoria. Non c'è garanzia sul momento in cui questo avverrà.
+	}
 }
