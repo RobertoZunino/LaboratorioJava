@@ -78,7 +78,8 @@ public class Parte08_TipiNumerici {
 		// Nota: 123 è un letterale int, 123.0 è un double.
 		
 		// Tra espressioni di tipo in virgola mobile, l'operatore /
-		// effettua ovviamente la divisione e non il quoziente come tra interi.
+		// effettua ovviamente la divisione e non il quoziente come tra
+		// interi.
 		x = x / 3.73f;
 		
 		// Rimarchiamo ancora che le variabili in virgola mobile non
@@ -120,7 +121,7 @@ public class Parte08_TipiNumerici {
 		
 		// Fate attenzione alla seguente trappola!
 		int i = 1;
-		y = i/2;    // Questo calcola il quoziente 1/2=0 e *poi* lo promuove!
+		y = i/2;   // Questo calcola il quoziente 1/2=0 e *poi* lo promuove!
 		System.out.println("y = " + y);    // Stampa 0.0
 		
 		// Per evitare il problema, possiamo usare un cast e forzare la
@@ -145,15 +146,17 @@ public class Parte08_TipiNumerici {
 	}
 	
 	static void esercizioQuadrato() {
-		// Dato n>=0, generate n punti casuali (a,b) dentro un quadrato di lato
-		// unitario. Contate quanti di questi hanno entrambe le coordinate <= 0.5,
+		// Dato n>=0, generate n punti casuali (a,b) dentro un quadrato di
+		// lato unitario.
+		// Contate quanti di questi hanno entrambe le coordinate <= 0.5,
 		// cioè cadono nel quarto del quadrato che tocca l'origine.
 		// Intuitivamente, in media, quanti punti siffatti dovremmo contare?
 		// Stampate il numero di punti siffatti rapportati al numero totale
-		// per diversi valori di n, e osservate a quanto converge il rapporto.
+		// per diversi valori di n, e osservate a quanto converge il
+		// rapporto.
 		//
-		// Questo metodo per stimare l'area di un insieme generando punti casuali
-		// viene chiamato metodo Monte Carlo.
+		// Questo metodo per stimare l'area di un insieme generando punti
+		// casuali viene chiamato metodo Monte Carlo.
 		
 		int n = 1000*1000;
 		double area = 42; // Bozza, da correggere
@@ -183,9 +186,10 @@ public class Parte08_TipiNumerici {
 		// Provate ad usare lo stesso metodo per stimare l'integrale della 
 		// funzione seno (Math.sin) tra 0 e pi greco (Math.PI).
 		//
-		// Sfruttate il fatto che il grafico del seno è incluso nel rettangolo
-		// di base [0, pi greco] e altezza [0,1]. Generate n punti nel
-		// rettangolo e contate quanti cadono sotto la curva.		
+		// Sfruttate il fatto che il grafico del seno è incluso nel
+		// rettangolo di base [0, pi greco] e altezza [0,1]. 
+		// Generate n punti nel rettangolo e contate quanti cadono sotto
+		// la curva.		
 		
 		int n = 1000*1000;
 		double area = 42; // Bozza, da correggere

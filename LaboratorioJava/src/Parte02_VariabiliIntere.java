@@ -61,16 +61,18 @@ public class Parte02_VariabiliIntere {
 		z = 20;
 		System.out.println("y = " + y + ", z = " + z);
 		
-		// Nella dichiarazione è anche possibile definire un valore iniziale della variabile.
+		// Nella dichiarazione è anche possibile definire un valore iniziale
+		// della variabile.
 		int a = 10;
 		int b = 20;
 		System.out.println("a = " + a + ", b = " + b);
 		
 		// Esercizio 2.
 		// Provate anche gli altri operatori aritmetici: + - * /
-		// Notate che / su variabili int calcola il quoziente, per es.
-		// si ha 1/2=0. Esiste anche % per calcolare il resto della divisione.
-		// Per es. 5%2=1.		
+		// Notate che / su variabili int calcola il quoziente. Per esempio
+		// si ha 1/2=0.
+		// Esiste anche % per calcolare il resto della divisione. Per 
+		// esempio 5%2=1.		
 		
 		// Esercizio 3.
 		// Il comando
@@ -82,8 +84,8 @@ public class Parte02_VariabiliIntere {
 		// Provate a stampare il valore del polinomio
 		//   10 x^2 - 5 x + 7
 		// per x = 1, 7, 9
-		// Nota: in Java non c'è l'operatore potenza x^2, ma potete usare x*x
-		// per il quadrato di x.
+		// Nota: in Java non c'è l'operatore potenza x^2, ma potete usare
+		// l'espressione x*x per il quadrato di x.
 
 		// Esercizio 5.
 		// Provate a dividere per zero e vedere cosa succede.		

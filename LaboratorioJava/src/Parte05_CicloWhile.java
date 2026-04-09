@@ -34,9 +34,9 @@ public class Parte05_CicloWhile {
 	}
 
 	static void esercizioAltreGuardie() {
-		// Nel ciclo di sotto, cosa succede se come guardia usiamo (i < 10) ?
+		// Nel ciclo di sotto, cosa succede se come guardia usiamo (i < 10)?
 		//
-		// E se usiamo (i != 10) ?
+		// E se usiamo (i != 10)?
 		
 		int i = 0;
 		System.out.println("Inizio ciclo while!");

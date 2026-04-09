@@ -22,7 +22,8 @@ public class Parte06_Fold {
 		// Spesso, è possibile trovare una semplice funzione g(-,-) che
 		// trasformi il precedente risultato in quello successivo:
 		//
-		//		f(x1, ..., xI, y) = g(f(x1, ..., xI), y) per ogni x1,...,xI,y
+		//		f(x1, ..., xI, y) = g(f(x1, ..., xI), y)
+		//			per ogni x1, ..., xI, y
 		//
 		// In tal caso basta eseguire gli assegnamenti sotto, in sequenza:
 		// 
@@ -116,8 +117,8 @@ public class Parte06_Fold {
 		// Qui f(x1, ..., xN) = min { x1, ..., xN }.
 		// Ovviamente g(a,b) = min(a,b).
 		//
-		// In questo caso, f() non è definito, quindi facciamo partire il ciclo
-		// da f(x1).
+		// In questo caso, f() non è definito, quindi facciamo partire il
+		// ciclo da f(x1).
 			
 		int a = 0;
 		int b = 10;
@@ -214,7 +215,8 @@ public class Parte06_Fold {
 		// i dispari. Per controllare se un numero è pari potete usare
 		//		n%2 == 0
 		//
-		// Alternativamente, potete incrementare di due i ad ogni iterazione.
+		// Alternativamente, potete incrementare di due i ad ogni
+		// iterazione.
 	}
 	
 	static void esercizioQuadrato() {
