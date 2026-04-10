@@ -22,6 +22,8 @@ public class Parte14_Output {
 		// gestirli. Così come abbiamo fatto per la lettura, useremo un
 		// comando try-with-resources.
 		
+		// Invece dello Scanner che abbiamo usato per leggere, usiamo ora
+		// un FileWriter per scrivere.
 		try (FileWriter file = new FileWriter(new File("output.txt"))) {
 			// Ora il file è aperto e possiamo scriverci dentro.
 			//
@@ -46,5 +48,4 @@ public class Parte14_Output {
 			System.out.println("Errore di IO su file: " + e);
 		}
 	}
-
 }
