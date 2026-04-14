@@ -10,7 +10,7 @@ public class Parte03_CondizionaleIf {
 		b = false;
 		
 		// Ci sono anche vari operatori aritmetico-logici che producono
-		// un valore booleano a paryire da due valori numerici:
+		// un valore booleano a partire da due valori numerici:
 		//
 		// ==         uguale a
 		// !=         diverso da
@@ -63,7 +63,7 @@ public class Parte03_CondizionaleIf {
 		}
 		
 		if (x > 25) {
-			System.out.println("Quasta print NON viene eseguita!");
+			System.out.println("Questa print NON viene eseguita!");
 		} else {
 			System.out.println("x NON è maggiore di 25");
 		}
@@ -77,10 +77,10 @@ public class Parte03_CondizionaleIf {
 		
 		// Esercizio 1.
 		// Controllate con un if se 10 < x < 50.
-		// Per farlo, dovere usare un AND.
+		// Per farlo, dovete usare un AND.
 
 		// Se nel caso "else" non volete eseguire nessun comando, potete 
-		// semplicemente omtterlo
+		// semplicemente ometterlo.
 		x = 1;
 		if ( x+x != 2 ) {
 			// Non viene eseguito.

@@ -14,7 +14,7 @@ public class Parte08_TipiNumerici {
 		// Una variabile int può contenere un valore da circa
 		// "meno due miliardi" a "due miliardi".
 		// Nel fare i conti, è importante rimanere dentro questi limiti,
-		// o verranno prodotto risultati errati;
+		// o verranno prodotti risultati errati;
 		//
 		// I letterali (le costanti) numerici sono di default espressioni 
 		// di tipo int.  
@@ -60,7 +60,7 @@ public class Parte08_TipiNumerici {
 		// **IMPORTANTE**:
 		// Si noti che solo un numero limitato di cifre vengono
 		// effettivamente memorizzate in un numero in virgola mobile.
-		// Pertanto, è buona norma ritenere questi valori in come *stime*,
+		// Pertanto, è buona norma ritenere questi valori come *stime*,
 		// come valori *approssimati* e non come valori perfettamente
 		// esatti. Questo li rende profondamente distinti da int e long.
 		//
@@ -107,10 +107,10 @@ public class Parte08_TipiNumerici {
 			System.out.println("Questo invece viene stampato!");
 		}
 		
-		// I float promuovono a double.		
+		// I float sono promossi a double.		
 		y = x;
 		
-		// Anche gli int e long promuovono a long e double.
+		// Anche gli int e long sono promossi a float e double.
 		x = 123;  // Da int a float
 		x = 123L; // Da long a float
 		y = 123;  // Da int a double

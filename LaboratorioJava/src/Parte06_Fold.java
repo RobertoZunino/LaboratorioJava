@@ -49,7 +49,7 @@ public class Parte06_Fold {
 		//		f(x1, ..., xN) = x1 + ... + xN
 		// Poniamo f() = 0 come la somma di zero addendi.
 		//
-		// La funzione g(a,b) darà quindi a+b
+		// La funzione g(a,b) sarà quindi a+b
 		
 		int somma = 0; // risultato = f()
 		
@@ -93,7 +93,7 @@ public class Parte06_Fold {
 			i++;
 		}
 		
-		System.out.println("Il prodotto dei primi 10 quadrati è " + prodotto);
+		System.out.println("Il prodotto dei primi 6 quadrati è " + prodotto);
 	}
 	
 	static void esercizioFattoriale() {
@@ -150,7 +150,7 @@ public class Parte06_Fold {
 
 		// TODO
 
-		System.out.println("minimo di p(" + a + "), ..., p(" + b + ") = " + massimo);			
+		System.out.println("massimo di p(" + a + "), ..., p(" + b + ") = " + massimo);			
 	}
 	
 	static void esercizioMassimoArgomento() {

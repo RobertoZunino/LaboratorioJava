@@ -16,7 +16,7 @@ public class Parte01_Introduzione {
 		// all'utente. Ogni singolo comando termina con il carattere
 		// punto-e-virgola ";".
 		// I comandi vengono eseguiti in ordine, dall'alto al basso.
-		// I messaggi stampati vegono mostrati in Eclipse nel tab "Console"
+		// I messaggi stampati vengono mostrati in Eclipse nel tab "Console"
 		// sottostante.
         System.out.println("Ciao!");
         System.out.println("Ecco un altro messaggio!");
@@ -29,7 +29,7 @@ public class Parte01_Introduzione {
 		//   "play" verde).
         
         // Esercizio:
-        // Modficate il codice sopra per stampare un terzo messaggio.
+        // Modificate il codice sopra per stampare un terzo messaggio.
         // Provate anche a stampare un numero invece che un messaggio.
 	}
 

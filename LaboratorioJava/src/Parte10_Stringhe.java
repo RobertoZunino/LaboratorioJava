@@ -55,7 +55,7 @@ public class Parte10_Stringhe {
 		System.out.println("s = " + s + ", risultato = " + risultato);
 		
 		// (Nota: il codice sopra non è particolarmente efficiente in
-		// quanto crea un sacco di stringhe intermedie. Ci sono metodi pià
+		// quanto crea un sacco di stringhe intermedie. Ci sono metodi più
 		// efficienti di farlo in Java, ma non li vediamo. Per stringhe
 		// brevi l'efficienza non importa molto.)
 		

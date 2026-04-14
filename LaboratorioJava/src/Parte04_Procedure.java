@@ -34,7 +34,7 @@ public class Parte04_Procedure {
 	// Ci torneremo in futuro.
 	
 	// Si noti come le variabili siano visibili solo all'interno della
-	// funzione dove vengno dichiarate:
+	// funzione dove vengono dichiarate:
 	static void dichiaraVariabileX() {
 		int x = 123;
 		System.out.println("x = " + x);

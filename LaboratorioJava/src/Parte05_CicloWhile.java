@@ -49,7 +49,7 @@ public class Parte05_CicloWhile {
 
 	static void esercizioQuadrati() {
 		// Modificate il ciclo while di sopra per stampare i primi 10
-		// quadrati invece che i primi 10 natirali.
+		// quadrati invece che i primi 10 naturali.
 	}
 	
 	static void esercizioNonTerminazione() {

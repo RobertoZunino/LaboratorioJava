@@ -207,7 +207,7 @@ public class Parte09_Vettori {
 		// - Si proceda analogamente col resto del vettore, fino a renderlo
 		//   ordinato.
 		//
-		// Questo algoritmo è noto come oridinamente per selezione
+		// Questo algoritmo è noto come oridinamento per selezione
 		// (selection sort) ed effettua O(n^2) operazioni, dove n è la
 		// lunghezza del vettore. Non è l'algoritmo più veloce, ma è uno tra
 		// i più semplici.
@@ -286,7 +286,7 @@ public class Parte09_Vettori {
 		//
 		// v[0] = 42;  // Errore!
 		
-		// Possiamo solo controllare se v è nullo no.
+		// Possiamo solo controllare se v è nullo o no.
 		if (v == null) {
 			System.out.println("v è proprio null!");
 		}

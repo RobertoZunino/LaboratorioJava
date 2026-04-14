@@ -20,7 +20,7 @@ public class Parte02_VariabiliIntere {
 		// Nota: sopra abbiamo "sommato" il messaggio "Valore di x" con il
 		// valore della variabile x. In Java, tale somma trasforma il valore
 		// intero 1234 nella sua sequenza di cifre decimali e le concatena
-		// al messaggio precedente, formado così il messaggio
+		// al messaggio precedente, formando così il messaggio
 		//    "Valore di x = 1234"
 		
 		// Il comando di assegnamento può quindi essere riusato su x per
