@@ -96,6 +96,8 @@ public class Parte03_CondizionaleIf {
 		int y = 5;
 		int z = 10;
 		
+		// TODO
+		
 		System.out.println("I numeri " + x + ", " + y + ", " + z + " sono / NON sono ordinati");
 		
 		// Esercizio 3.
@@ -104,6 +106,8 @@ public class Parte03_CondizionaleIf {
 		y = 5;
 		z = 7;
 		int minimo = -10000;
+		
+		// TODO
 		
 		System.out.println("Il minimo tra " + x + ", " + y + ", " + z + " è " + minimo);
 		

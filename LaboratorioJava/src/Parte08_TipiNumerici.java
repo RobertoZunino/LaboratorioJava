@@ -163,7 +163,7 @@ public class Parte08_TipiNumerici {
 
 		// TODO
 		
-		System.out.println("Stima dell'area (con " + n + "punti): " + area);
+		System.out.println("Stima dell'area (con " + n + " punti): " + area);
 	}
 	
 	static void esercizioCerchio() {
@@ -179,7 +179,7 @@ public class Parte08_TipiNumerici {
 
 		// TODO
 		
-		System.out.println("Stima dell'area (con " + n + "punti): " + area);
+		System.out.println("Stima dell'area (con " + n + " punti): " + area);
 	}
 	
 	static void esercizioIntegrale() {
@@ -196,6 +196,6 @@ public class Parte08_TipiNumerici {
 
 		// TODO
 		
-		System.out.println("Stima dell'area (con " + n + "punti): " + area);
+		System.out.println("Stima dell'area (con " + n + " punti): " + area);
 	}
 }

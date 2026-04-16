@@ -3,7 +3,6 @@ public class Parte05_CicloWhile {
 
 	public static void main(String[] args) {
 		sintassiWhile();
-		// potenzeDiDue();
 	}
 	
 	static void sintassiWhile() {
@@ -31,12 +30,16 @@ public class Parte05_CicloWhile {
 	static void esercizioGuardiaFalsa() {
 		// Verificate che, se la guardia è falsa fin dall'inizio
 		// il while non esegue nemmeno un'iterazione.
+		
+		// TODO
 	}
 
 	static void esercizioAltreGuardie() {
 		// Nel ciclo di sotto, cosa succede se come guardia usiamo (i < 10)?
 		//
 		// E se usiamo (i != 10)?
+		
+		// TODO
 		
 		int i = 0;
 		System.out.println("Inizio ciclo while!");
@@ -50,6 +53,8 @@ public class Parte05_CicloWhile {
 	static void esercizioQuadrati() {
 		// Modificate il ciclo while di sopra per stampare i primi 10
 		// quadrati invece che i primi 10 naturali.
+		
+		// TODO
 	}
 	
 	static void esercizioNonTerminazione() {
@@ -91,10 +96,12 @@ public class Parte05_CicloWhile {
 		// Dati a, b con a<b, stampare tutti i valori del polinomio
 		// 	   10 x^2 - 5 x + 7
 		// per a<=x<=b.
-		int a = 0;
+		int a = -10;
 		int b = 10;
 		
 		System.out.println("Valori di p(x) con " + a + " <= x <= " + b);
+		
+		// TODO
 		
 		// int x;
 		// int y;
@@ -104,6 +111,8 @@ public class Parte05_CicloWhile {
 		// Nell'esercizio precedente aggiungete un if in modo da
 		// stampare solo i valori del polinomio sopra una data soglia.
 		
-		// int soglia = 5;
+		// TODO
+		
+		// int soglia = 100;
 	}
 }

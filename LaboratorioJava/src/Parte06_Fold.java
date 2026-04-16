@@ -38,7 +38,7 @@ public class Parte06_Fold {
 		// Vediamo alcuni esempi.
 		
 		somma();
-		prodotto();
+		// prodotto();
 	}
 
 	static void somma() {
@@ -120,10 +120,10 @@ public class Parte06_Fold {
 		// In questo caso, f() non è definito, quindi facciamo partire il
 		// ciclo da f(x1).
 			
-		int a = 0;
+		int a = -10;
 		int b = 10;
 		
-		int minimo = a;  // f(a)
+		int minimo = 10*a*a-5*a+7;  // f(polinomio(a))
 		int x = a+1;
 		while (x <= b) {
 			// risultato = g(risultato, polinomio(x))
@@ -143,7 +143,7 @@ public class Parte06_Fold {
 		// polinomio
 		// 	   - 10 x^2 + 5 x - 7
 		// per x intero con a<=x<=b.
-		int a = 0;
+		int a = -10;
 		int b = 10;
 		
 		int massimo = +10000;  // Bozza da correggere!
@@ -153,9 +153,11 @@ public class Parte06_Fold {
 		System.out.println("massimo di p(" + a + "), ..., p(" + b + ") = " + massimo);			
 	}
 	
-	static void esercizioMassimoArgomento() {
+	static void esercizioMinimoArgomento() {
 		// Modificate gli esercizi di sopra su minimo / massimo in modo da
 		// stampare anche il valore di x che causa il minimo / massimo.
+		
+		// TODO
 	}
 	
 	static void esercizioSommaRipetuta() {
@@ -217,6 +219,8 @@ public class Parte06_Fold {
 		//
 		// Alternativamente, potete incrementare di due i ad ogni
 		// iterazione.
+		
+		// TODO
 	}
 	
 	static void esercizioQuadrato() {

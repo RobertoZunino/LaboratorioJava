@@ -22,7 +22,7 @@ public class Parte07_CicloFor {
 		}
 		System.out.println("Fine for");
 			
-		// Il for è perfettamente equivalente a
+		// Il for è completamente equivalente a
 		i = 0;
 		while (i < 10) {
 			System.out.println("i = " + i);
@@ -36,6 +36,8 @@ public class Parte07_CicloFor {
 	static void esercizioQuadrati() {
 		// Usate un for per stampare i primi 20 quadrati.
 		// 0 1 4 9 ...
+		
+		// TODO
 	}
 			
 	static void esercizioPrimalità() {
@@ -44,11 +46,15 @@ public class Parte07_CicloFor {
 		//
 		// Potete imitare il precedente esercizio che usava il while,
 		// ma provate a usare un ciclo for al suo posto.
+		
+		// TODO
 	}
 	
 	static void esercizioTabellaPrimi() {
 		// Per ogni intero n tra 2 e 100 stampate se è primo o no.
 		//
 		// Bonus: se n è composto, stampate anche un suo divisore.
+		
+		// TODO
 	}
 }
