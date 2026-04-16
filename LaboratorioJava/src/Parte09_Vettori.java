@@ -82,14 +82,20 @@ public class Parte09_Vettori {
 	
 	static void esercizioConto() {
 		// Dato n>=0, generate un vettore con dentro i primi n naturali.
+		
+		// TODO
 	}
 
 	static void esercizioQuadrati() {
 		// Dato n>=0, generate un vettore con dentro i primi n quadrati.
+		
+		// TODO
 	}
 	
 	static void esercizioSomma() {
-		// Dato un vettore di interi, calcolate la somma dei suoi elementi. 
+		// Dato un vettore di interi, calcolate la somma dei suoi elementi.
+		
+		// TODO
 	}
 	
 	static void esercizioSommeParziali() {
