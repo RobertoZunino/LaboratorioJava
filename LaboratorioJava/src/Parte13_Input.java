@@ -93,6 +93,8 @@ public class Parte13_Input {
 		// (Costo: O(N * log_2 N) operazioni)
 		//
 		// Usate la strategia che preferite.
+		//
+		// Bonus: restituite il vettore senza dati "in eccesso" in coda.
 		
 		int[] v = null; // Bozza da correggere
 		
