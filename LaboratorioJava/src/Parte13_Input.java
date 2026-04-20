@@ -146,4 +146,26 @@ public class Parte13_Input {
 			System.out.println("Errore di IO su file: " + e);
 		}
 	}
+	
+	static int[] esercizioVettoreDaFile() {
+		// Si assuma di avere un file di nome "vettore.txt" contenente una
+		// sequenza di interi. Il file contiene una singola riga, con i
+		// numeri separati da spazi. Ad esempio:
+		//		10 34 -56 7 0 356
+		//
+		// Si legga quindi dal file un vettore di interi corrispondente.
+		//
+		// Per fare ciò, si usino le seguenti funzioni:
+		//
+		//   s.split(" ");
+		//   	Separa la stringa s in un vettore di stringhe.
+		//
+		//   n = Integer.parseInt(s);
+		//		Converte una stringa in un intero, se la stringa contiene
+		//      le cifre decimali di un intero. (Altrimenti causa un crash).
+		
+		int[] v = new int[] {};
+		
+		return v;
+	}
 }
