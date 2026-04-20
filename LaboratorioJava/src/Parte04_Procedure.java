@@ -79,19 +79,31 @@ public class Parte04_Procedure {
 	
 	static void scambioVariabili() {
 		// Per scambiare i valori di due variabili, non possiamo scrivere
-		// 		x = y ; y = x ;
-		// perché dopo "x = y" il valore di x è andato perduto.
+		// 		x = y;
+		//		y = x;
+		// perché dopo "x = y" il valore originale di x viene sovrascritto.
 		
 		// Possiamo però usare una variabile "di appoggio":
 		int a = 5;
 		int b = 10;
 		int tmp; // "appoggio"
 		
-		tmp = a;
-		a = b;
-		b = tmp;
+		tmp = a;	// Copiamo il valore originale di a
+		a = b;		// Sovrascriviamo a col valore di b
+		b = tmp;	// Mettiamo in b il valore originale di a
 
 		System.out.println("a = " + a); // 10
 		System.out.println("b = " + b); // 5
 	}
+	
+	// Esercizio.
+	//
+	// Verificate che qualunque procedura può fare chiamate a qualunque
+	// procedura. Per esempio, definite sotto una procedura "esercizio" che
+	// chiami le procedure uno/due/tre viste sopra. Dopo, modificate il main
+	// per chiamare la vostra nuova procedura esercizio:
+	//
+	//		main -> esercizio -> uno/due/tre
+	
+	// TODO
 }
