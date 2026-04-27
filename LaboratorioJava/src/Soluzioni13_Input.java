@@ -6,8 +6,9 @@ import java.io.*;
 public class Soluzioni13_Input {
 
 	public static void main(String[] args) {
+		// La tastiera va inizializzata prima di eseguire gli esercizi che
+		// leggono da tastiera.
 		introduzione();
-		esercizioVettoreDaFile();
 	}
 	
 	// Una variabile globale per rappresentare l'input da tastiera.
@@ -101,7 +102,7 @@ public class Soluzioni13_Input {
 			if (n == 0) {
 				terminato = true;
 			} else {
-				// Inserisci n nel vettore
+				// Inseriamo n nel vettore
 				// Prima, assicuriamoci ci sia posto libero nel vettore.
 				if (occupati == v.length) {
 					// Vettore pieno: bisogna travasare i dati in un vettore
