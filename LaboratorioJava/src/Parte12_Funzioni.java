@@ -86,11 +86,22 @@ public class Parte12_Funzioni {
 		return i + baseIncremento;
 	}
 	
-	static int[] esercizioEnumerazione(int n) {
+	static int[] esercizioEnumerazioneInt(int n) {
 		// Definite una funzione che genera un vettore con elementi
 		// {0,1,2,3,...,n-1}.
 		
 		int[] v = new int[3];  // Bozza, da correggere
+		
+		// TODO
+		
+		return v;
+	}
+	
+	static double[] esercizioEnumerazioneDouble(int n) {
+		// Definite una funzione che genera un vettore con elementi
+		// {0,1,2,3,...,n-1}.
+		
+		double[] v = new double[3];  // Bozza, da correggere
 		
 		// TODO
 		
@@ -158,7 +169,7 @@ public class Parte12_Funzioni {
 	}
 
 	static int esercizioRicercaBinaria(int[] v, int x) {
-		// (Un po' più impegnativo)
+		// (Impegnativo)
 		// Ripetete l'esercizio sopra, ma questa volta assumendo che il
 		// vettore v sia ordinato in modo debolmente crescente.
 		//
