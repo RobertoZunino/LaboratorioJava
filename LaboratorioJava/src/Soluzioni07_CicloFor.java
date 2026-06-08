@@ -65,4 +65,35 @@ public class Soluzioni07_CicloFor {
 			n++;
 		}
 	}
+	
+	static void esercizioCifre() {
+		// Le equazioni seguenti sono vere:
+		//   radice quadrata di 2025 = 20 + 25
+		//   radice quadrata di 2035 = 20 + 35
+		//   radice quadrata di 9801 = 98 + 01
+		//
+		// Cercate numeri naturali con 6 e con 8 cifre che soddisfano
+		// equazioni analoghe.
+		// Non vi serve veramente calcolare la radice quadrata: vi basta
+		// sapere come calcolare il quadrato.
+		
+		int max = 1000; // metà di 6 cifre
+		int a;
+		int b;
+		for (a = 0 ; a < max ; a++) {
+			for (b = 0 ; b < max ; b++) {
+				if (a*max+b == (a+b)*(a+b)) {
+					System.out.println("Trovato: " + a + "+" + b + " al quadrato = " + (a*max+b));
+				}
+			}
+		}
+		max = 10000; // metà di 8 cifre
+		for (a = 0 ; a < max ; a++) {
+			for (b = 0 ; b < max ; b++) {
+				if (a*max+b == (a+b)*(a+b)) {
+					System.out.println("Trovato: " + a + "+" + b + " al quadrato = " + (a*max+b));
+				}
+			}
+		}
+	}
 }

@@ -57,4 +57,18 @@ public class Parte07_CicloFor {
 		
 		// TODO
 	}
+	
+	static void esercizioCifre() {
+		// Le equazioni seguenti sono vere:
+		//   radice quadrata di 2025 = 20 + 25
+		//   radice quadrata di 2035 = 20 + 35
+		//   radice quadrata di 9801 = 98 + 01
+		//
+		// Cercate numeri naturali con 6 e con 8 cifre che soddisfano
+		// equazioni analoghe.
+		// Non vi serve veramente calcolare la radice quadrata: vi basta
+		// sapere come calcolare il quadrato.
+		
+		// TODO
+	}
 }
