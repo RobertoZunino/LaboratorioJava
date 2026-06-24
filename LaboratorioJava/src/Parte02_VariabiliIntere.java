@@ -32,20 +32,9 @@ public class Parte02_VariabiliIntere {
 		System.out.println("Valore di x = " + x); // Ora stampa 10
 		
 		// Alle variabili è possibile assegnare non solo valori costanti, ma
-		// valori che sono il risultato della valutazione di espressioni
-		// aritmetiche.
-		//
-		// I principali operatori aritmetici tra numeri interi sono:
-		//		+ somma
-		//		- sottrazione
-		//		* moltiplicazione
-		//		/ quoziente intero
-		//		% resto della divisione intera
-		//
-		// Nota: 7/2 è uguale a 3 e non 3.5 perché è il quoziente intero.
-		// Analogamente, 7%2 è uguale al resto 1.
-		//
-		// Vediamo un esempio con le espressioni:
+		// valori che sono il risultato della valutazione di espressioni.
+		// Inoltre, le espressioni possono fare riferimento ai valori
+		// correnti delle variabili.
 		x = 10;
 		x = x + 100;
 		// All'inizio x è impostato a 10. Poi viene calcolato x+100, con
@@ -54,7 +43,7 @@ public class Parte02_VariabiliIntere {
 		// Esercizio 1.
 		// Verificate che ora x vale davvero 110, stampandola.
 		
-		// Si possono dichiarare più variabili.
+		// Si possono dichiarare quante variabili si desidera.
 		int y;
 		int z;
 		y = 10;
@@ -69,24 +58,22 @@ public class Parte02_VariabiliIntere {
 		
 		// Esercizio 2.
 		// Provate anche gli altri operatori aritmetici: + - * /
-		// Notate che / su variabili int calcola il quoziente. Per esempio
-		// si ha 1/2=0.
-		// Esiste anche % per calcolare il resto della divisione. Per 
-		// esempio 5%2=1.		
+		// Eseguite degli assegnamenti usando delle espressioni a vostra
+		// scelta.
 		
 		// Esercizio 3.
 		// Il comando
 		x++;
 		// è equivalente a x=x+1, ovvero incrementa di uno x. 
 		// Verificatelo.
-				
+		
 		// Esercizio 4.
 		// Provate a stampare il valore del polinomio
 		//   10 x^2 - 5 x + 7
 		// per x = 1, 7, 9
 		// Nota: in Java non c'è l'operatore potenza x^2, ma potete usare
 		// l'espressione x*x per il quadrato di x.
-
+		
 		// Esercizio 5.
 		// Provate a dividere per zero e vedere cosa succede.		
 	}

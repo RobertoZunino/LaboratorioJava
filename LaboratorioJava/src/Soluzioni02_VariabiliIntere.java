@@ -15,10 +15,8 @@ public class Soluzioni02_VariabiliIntere {
 		
 		// Esercizio 2.
 		// Provate anche gli altri operatori aritmetici: + - * /
-		// Notate che / su variabili int calcola il quoziente. Per esempio
-		// si ha 1/2=0.
-		// Esiste anche % per calcolare il resto della divisione. Per 
-		// esempio 5%2=1.		
+		// Eseguite degli assegnamenti usando delle espressioni a vostra
+		// scelta.
 		int a = 10;
 		int b = 20;
 		x = 3*a+b; // 50
@@ -34,14 +32,14 @@ public class Soluzioni02_VariabiliIntere {
 		// è equivalente a x=x+1, ovvero incrementa di uno x. 
 		// Verificatelo.
 		System.out.println("x ora vale " + x); // Stampa 2301
-				
+		
 		// Esercizio 4.
 		// Provate a stampare il valore del polinomio
 		//   10 x^2 - 5 x + 7
 		// per x = 1, 7, 9
 		// Nota: in Java non c'è l'operatore potenza x^2, ma potete usare
 		// l'espressione x*x per il quadrato di x.
-
+		
 		x = 1;
 		int y = 10*x*x - 5*x + 7;
 		System.out.println("p(" + x + ") = " + y); // Stampa 12

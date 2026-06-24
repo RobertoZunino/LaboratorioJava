@@ -13,12 +13,8 @@ public class Parte01_Introduzione {
 		// - ... e molto altro.
 		
 		// Qui sotto, usiamo due comandi "println" per stampare due messaggi
-		// all'utente. Ogni singolo comando termina con il carattere
-		// punto-e-virgola ";".
-		// I comandi vengono eseguiti in ordine, dall'alto al basso.
-		// I messaggi stampati vengono mostrati in Eclipse nel tab "Console"
-		// sottostante.
-        System.out.println("Ciao!");
+		// all'utente. 
+		System.out.println("Ciao!");
         System.out.println("Ecco un altro messaggio!");
         
         // Per eseguire il programma, in Eclipse basta:
@@ -28,9 +24,44 @@ public class Parte01_Introduzione {
         // o cliccare sul tasto Run della toolbar (assomiglia a un tasto
 		//   "play" verde).
         
-        // Esercizio:
-        // Modificate il codice sopra per stampare un terzo messaggio.
-        // Provate anche a stampare un numero invece che un messaggio.
+        // Alcune osservazioni:
+        //         
+		// - I messaggi stampati vengono mostrati in Eclipse nel tab
+        //   "Console" sottostante.
+        //
+        // - I comandi vengono eseguiti in ordine, dal primo all'ultimo.
+        //
+        // - Ogni comando termina col carattere punto-e-virgola ";"
+        //
+        // - Nel comando println, ogni messaggio da stampare è racchiuso tra
+        //   virgolette doppie.
+        
+        // Sopra abbiamo visto che il comando println(...) accetta come
+        // argomento tra le parentesi un messaggio, racchiuso tra
+        // virgolette.
+        // Oltre ai messaggi, è possibile usare come argomento anche
+        // valori numerici. Tali valori possono essere speficicati tramite
+        // *espressioni* aritmetiche intere:
+        
+        System.out.println(1234);    // Banale costante
+        System.out.println(12 + 67); // 79 --- Addizione
+        System.out.println(12 - 7);  // 5  --- Sottrazione
+        System.out.println(10 * 8);  // 80 --- Moltiplicazione
+        System.out.println(10 / 3);  // 3  --- Quoziente (non divisione!)
+        System.out.println(10 % 3);  // 1  --- Resto della divisione
+        
+        // Se avete bisogno di parentesi nelle espressioni, potete usare
+        // le parentesi tonde. Se vi servono parentesi annidate, le une
+        // dentro le altre, usate sempre e solo quelle tonde.
+        System.out.println(3*(4 + 5*(2+1)));  // Espressione complessa
+        
+        // Esercizio 1:
+        // Modificate il codice sopra, aggiungendo la stampa di un ulteriore
+        // messaggio a vostra scelta.
+        
+        // Esercizio 2:
+        // Provate a stampare il risultato di 1+2*3 e osservate che vengono
+        // rispettate le comuni precedenze tra gli operatori aritmetici,
+        // come se avessimo aggiunto le parentesi.        
 	}
-
 }
