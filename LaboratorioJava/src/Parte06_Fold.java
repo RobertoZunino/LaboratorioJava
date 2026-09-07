@@ -3,7 +3,7 @@ public class Parte06_Fold {
 
 	public static void main(String[] args) {
 		// Un uso molto comune del ciclo while è quello di calcolare il
-		// valore di  una funzione definita sulle sequenze finite di zero o
+		// valore di una funzione definita sulle sequenze finite di zero o
 		// più dati.
 		//
 		//		f(x1, x2, x3, ..., xN)   con N >= 0
@@ -37,19 +37,19 @@ public class Parte06_Fold {
 		// Questo modo di procedere viene chiamato "fold".
 		// Vediamo alcuni esempi.
 		
-		somma();
+		sommaQuadrati();
 		// prodotto();
 	}
 
-	static void somma() {
+	static void sommaQuadrati() {
 		// Sommiamo x^2 per x tra 1 e 20:
 		//		1^2 + 2^2 + ... + 20^2
 		//
 		// Qui, la funzione f è data da:
-		//		f(x1, ..., xN) = x1 + ... + xN
+		//		f(x1, ..., xN) = x1^2 + ... + xN^2
 		// Poniamo f() = 0 come la somma di zero addendi.
 		//
-		// La funzione g(a,b) sarà quindi a+b
+		// La funzione g(a,b) sarà quindi a+b^2
 		
 		int somma = 0; // risultato = f()
 		
@@ -80,10 +80,10 @@ public class Parte06_Fold {
 		//		1^2 * 2^2 * ... * 6^2
 		//
 		// Qui, la funzione f è data da:
-		//		f(x1, ..., xN) = x1 * ... * xN
+		//		f(x1, ..., xN) = x1^2 * ... * xN^2
 		// Poniamo f() = 1 come il prodotto di zero termini.
 		//
-		// La funzione g(a,b) darà quindi a*b
+		// La funzione g(a,b) darà quindi a*b^2
 		
 		int prodotto = 1; // risultato = f()
 		
@@ -190,7 +190,9 @@ public class Parte06_Fold {
 	static void esercizioPrimalità() {
 		// Dato n>=0 stabilire se è un numero primo.
 		// Potete adattare la soluzione all'esercizio precedente.
-		// Non vi serve una variabile contatore ma basta un booleano. 
+		// Non vi serve una variabile contatore per sapere quanti sono i
+		// divisori, basta ricordarsi se ci sono divisori non banali o meno.
+		// Per quello, basta un booleano. 
 		
 		int n = 123456;
 		
