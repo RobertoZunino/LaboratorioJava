@@ -42,6 +42,7 @@ public class Parte03_CondizionaleIf {
 		System.out.println("b = " + b);
 		
 		// ****************************************************
+		
 		// Il comando condizionale if esegue un dato blocco di comandi se 
 		// un'espressione booleana (detta "guardia") è vera, e un altro dato
 		// blocco di comandi se invece la guardia è falsa.
@@ -55,7 +56,7 @@ public class Parte03_CondizionaleIf {
 		// }
 		
 		x = 10;
-	
+		
 		if (x > 5) {
 			System.out.println("x è maggiore di 5");
 		} else {
@@ -67,7 +68,7 @@ public class Parte03_CondizionaleIf {
 		} else {
 			System.out.println("x NON è maggiore di 25");
 		}
-
+		
 		// Si noti l'indentazione del codice sopra.
 		//
 		// In Java, è prassi consolidata indentare il codice, spostandolo
@@ -78,7 +79,7 @@ public class Parte03_CondizionaleIf {
 		// Esercizio 1.
 		// Controllate con un if se 10 < x < 50.
 		// Per farlo, dovete usare un AND.
-
+		
 		// Se nel caso "else" non volete eseguire nessun comando, potete 
 		// semplicemente ometterlo.
 		x = 1;
@@ -87,7 +88,7 @@ public class Parte03_CondizionaleIf {
 			System.out.println("Houston, abbiamo un problema!");
 		}
 		// Niente "else".
-
+		
 		
 		// Esercizio 2.
 		// Dati x,y,z controllate se sono ordinati in modo debolmente
