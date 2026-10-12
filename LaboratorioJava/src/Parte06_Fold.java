@@ -171,6 +171,44 @@ public class Parte06_Fold {
 		System.out.println("Il prodotto " + m + "*" + n + " è uguale a ...");
 	}
 
+	static void esercizioNumeroOccorrenze() {
+		// Sia p(x) il polinomio
+		//		x^4 - 10 x^3 + 35 x^2 - 50 x + 24
+		// Dati tre interi a,b,y calcolate il numero di valori interi di x
+		// compresi tra a e b per cui p(x) = y.
+		
+		// int a = -100;
+		// int b = 100;
+		int y = 0;
+		
+		int numeroX = 42; // Bozza da correggere
+		
+		// TODO
+
+		System.out.println("Il polinomio assume valore " + y + " per " + numeroX + " volte.");
+	}
+	
+	static void esercizioControlloOccorrenze() {
+		// Sia p(x) il polinomio
+		//		x^4 - 10 x^3 + 35 x^2 - 50 x + 24
+		// Dati tre interi a,b,y calcolate se esiste almeno un valore
+		// intero x compreso tra a e b per cui si ha p(x) = y.
+		
+		// int a = -100;
+		// int b = 100;
+		int y = 0;
+		
+		boolean esisteX = true; // Bozza da correggere
+		
+		// TODO
+		
+		if (esisteX) {
+			System.out.println("Il polinomio assume valore " + y + " in almeno un punto");
+		} else {
+			System.out.println("Il polinomio NON assume mai il valore " + y);
+		}
+	}
+	
 	static void esercizioNumeroDivisori() {
 		// Dato n>=2 calcolate il numero di divisori interi non banali
 		// (1 < divisore < n).
