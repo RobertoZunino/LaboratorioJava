@@ -177,7 +177,7 @@ public class Soluzioni06_Fold {
 	}
 	
 	static void esercizioPrimalità() {
-		// Dato n>=0 stabilire se è un numero primo.
+		// Dato n>=2 stabilire se è un numero primo.
 		// Potete adattare la soluzione all'esercizio precedente.
 		// Non vi serve una variabile contatore ma basta un booleano. 
 		

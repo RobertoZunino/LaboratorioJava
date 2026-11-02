@@ -226,7 +226,7 @@ public class Parte06_Fold {
 	}
 	
 	static void esercizioPrimalità() {
-		// Dato n>=0 stabilire se è un numero primo.
+		// Dato n>=2 stabilire se è un numero primo.
 		// Potete adattare la soluzione all'esercizio precedente.
 		// Non vi serve una variabile contatore per sapere quanti sono i
 		// divisori, basta ricordarsi se ci sono divisori non banali o meno.
