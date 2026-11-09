@@ -17,7 +17,7 @@ public class Parte08_TipiNumerici {
 		// o verranno prodotti risultati errati;
 		//
 		// I letterali (le costanti) numerici sono di default espressioni 
-		// di tipo int.  
+		// di tipo int.
 		int x = 1234567890;
 		System.out.println("Variabile int x = " + x);
 		
@@ -118,6 +118,17 @@ public class Parte08_TipiNumerici {
 		
 		// Nota: durante la conversione si potrebbero perdere le cifre
 		// meno significative.
+		x = 1234567890123456789L;
+		System.out.println("x = " + x);  // Stampa 1.234568E18
+		// La parte "E18" alla fine fa parte della cosiddetta notazione
+		// scientifica e indica "per 10 alla 18".
+		// Le cifre successive sono state approssimate. Il nostro numero in
+		// pratica è diventato 1234568000000000000.
+		
+		// Possiamo usarla anche noi nelle nostre costanti.
+		x = 9.34645E20F;     // float molto grande
+		y = 534.34534E-120;  // double molto vicino a zero
+		
 		
 		// Fate attenzione alla seguente trappola!
 		int i = 1;
